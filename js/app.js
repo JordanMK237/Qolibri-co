@@ -1,21 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Animation d'apparition des sections
+  // --- Apparition fluide des sections ---
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, i * 150); // décalage progressif en cascade
       }
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll(".hero, .section").forEach(el => observer.observe(el));
+  const animatedElements = document.querySelectorAll(".hero, .section, .service-item");
+  animatedElements.forEach(el => observer.observe(el));
 
-  // Apparition immédiate de la hero
+  // --- Apparition immédiate de la hero ---
   setTimeout(() => {
-    document.querySelector(".hero")?.classList.add("visible");
+    const hero = document.querySelector(".hero");
+    if (hero) hero.classList.add("visible");
   }, 200);
 
-  // Menu overlay
+  // --- Menu overlay ---
   const openMenuBtn = document.getElementById("openMenu");
   const closeMenuBtn = document.getElementById("closeMenu");
   const overlayMenu = document.getElementById("overlayMenu");
@@ -30,10 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     overlayMenu.addEventListener("click", (e) => {
-      // Ferme si on clique à côté du contenu (fond)
       if (e.target === overlayMenu) {
         overlayMenu.classList.remove("active");
       }
     });
   }
+
+  // --- Bouton retour haut ---
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    scrollTopBtn.style.display = window.scrollY > 400 ? "block" : "none";
+  });
+
+  scrollTopBtn?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });

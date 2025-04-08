@@ -9,7 +9,9 @@
 </head>
 <body>
 <header class="header-qolibri">
-  <div class="logo">Qolibri & Cie</div>
+  <a href="Accueil.html" class="logo">
+    <img src="img/logo-Transparent.png" alt="Logo Qolibri & Cie">
+  </a>
   <button class="menu-toggle" id="openMenu">&#9776;</button>
 </header>
 
@@ -18,12 +20,11 @@
   <button class="close-btn" id="closeMenu">&times;</button>
   <div class="overlay-content">
     <div class="overlay-col">
-      <h3>À propos de nous</h3>
+      <h3>Général</h3>
       <ul>
-        <li><a href="#">Qolibri&Cie</a></li>
+        <li><a href="Accueil.html">Accueil</a></li>
         <li><a href="#">Missions</a></li>
-        <li><a href="#">Valeurs</a></li>
-        <li><a href="#">Fondatrice</a></li>
+        <li><a href="#">Informations</a></li>
       </ul>
     </div>
     <div class="overlay-col">
@@ -43,103 +44,122 @@
       </ul>
     </div>
     <div class="overlay-col">
-      <h3>Général</h3>
+      <h3>À propos de nous</h3>
       <ul>
-        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Qolibri&Cie</a></li>
         <li><a href="#">Missions</a></li>
-        <li><a href="#">Informations</a></li>
+        <li><a href="#">Valeurs</a></li>
+        <li><a href="#">Fondatrice</a></li>
+        <li><a href="#">Mentions légales et confidentialité</a></li>
       </ul>
     </div>
   </div>
 </div>
 
-<section class="hero">
-  <img src="img/logo.png" alt="Logo">
-  <h1>RECRUTEMENT ET ACCOMPAGNEMENT EN RESSOURCES HUMAINES</h1>
-  <p>Nous savons que les entreprises et les candidats ont des besoins différents<br>en matière de Ressources Humaines et que les recettes toutes faites c’est juste bon pour la cuisine .</p>
-</section>
+<!-- === CONTENU PRINCIPAL === -->
+<main>
+  <section class="hero">
+    <img src="img/logo_image.jpg" alt="Logo">
+    <h1>RECRUTEMENT ET ACCOMPAGNEMENT EN RESSOURCES HUMAINES</h1>
+    <p>Nous savons que les entreprises et les candidats ont des besoins différents<br>en matière de Ressources Humaines et que les recettes toutes faites c’est juste bon pour la cuisine.</p>
+  </section>
 
-<section class="services-list">
-  <!-- Bloc 1 : image à droite (par défaut) -->
-  <div class="service-item">
-    <div class="service-text">
-      <h3>Recrutement sur-mesure</h3>
-      <p>
-        Nous identifions, sélectionnons et intégrons les talents les plus pertinents pour votre organisation, avec une approche qualitative et ciblée.<br>
-         Recrutement CDI, CDD (intérim via notre partenaire)<br>
-         Consultant dédié & expertise sectorielle<br>
-         Suivi global, de la définition du besoin à l’intégration
-      </p>
+  <section class="services-list">
+    <!-- Bloc 1 -->
+    <div class="service-item">
+      <div class="service-text">
+        <h3>Recrutement sur-mesure</h3>
+        <p>
+          Nous identifions, sélectionnons et intégrons les talents les plus pertinents pour votre organisation, avec une approche qualitative et ciblée.<br>
+          Recrutement CDI, CDD (intérim via notre partenaire)<br>
+          Consultant dédié & expertise sectorielle<br>
+          Suivi global, de la définition du besoin à l’intégration
+        </p>
+        <a href="#" class="btn-services">Afficher les services</a>
+      </div>
+      <div class="service-img">
+        <img src="img/entretien.avif" alt="Service Recrutement">
+      </div>
     </div>
-    <div class="service-img">
-      <img src="img/entretien.avif" alt="Service Recrutement">
+
+    <!-- Bloc 2 -->
+    <div class="service-item reverse">
+      <div class="service-img">
+        <img src="img/audit_rh2.jpeg" alt="Service Audit RH">
+      </div>
+      <div class="service-text">
+        <h3>Audit RH</h3>
+        <p>
+          Nous réalisons un état des lieux complet de vos pratiques RH pour les optimiser, vous conformer aux obligations légales et soutenir votre développement.<br>
+          Dispositif PCRH<br>
+          Diagnostic opérationnel & recommandations concrètes<br>
+          Alignement stratégique & conformité réglementaire
+        </p>
+        <a href="#" class="btn-services">Afficher les services</a>
+      </div>
     </div>
-  </div>
 
-  <!-- Bloc 2 : image à gauche -->
-  <div class="service-item reverse">
-    <div class="service-img">
-      <img src="img/audit_rh2.jpeg" alt="Service Audit RH">
+    <!-- Bloc 3 -->
+    <div class="service-item">
+      <div class="service-text">
+        <h3>Externalisation RH</h3>
+        <p>
+          Nous gérons tout ou partie de votre fonction RH pour vous faire gagner du temps, structurer vos processus et sécuriser votre gestion du personnel.<br>
+          Gestion administrative, juridique et opérationnelle<br>
+          Accompagnement ponctuel ou récurrent<br>
+          Expertise dédiée à votre structure
+        </p>
+        <a href="#" class="btn-services">Afficher les services</a>
+      </div>
+      <div class="service-img">
+        <img src="img/externalisation_rh.jpeg" alt="Service Externalisation RH">
+      </div>
     </div>
-    <div class="service-text">
-      <h3>Audit RH</h3>
-      <p>
-        Nous réalisons un état des lieux complet de vos pratiques RH pour les optimiser, vous conformer aux obligations légales et soutenir votre développement.<br>
-         Dispositif PCRH<br>
-         Diagnostic opérationnel & recommandations concrètes<br>
-         Alignement stratégique & conformité réglementaire
-      </p>
+  </section>
+
+  <section class="section">
+
+  </section>
+
+  <section class="section bloc-liens">
+    <h2 class="section-title">Pourquoi choisir Qolibri & Cie ?</h2>
+    <div class="cta-container">
+      <a href="#" class="cta-block bleu">
+        <span><img src="img/integration%20(1).png" alt="appel"></span>
+        <strong>Une approche humaine<br>et personnalisée</strong>
+      </a>
+      <a href="#" class="cta-block jaune">
+        <span><img src="img/rectangle-professionnel%20(1).png" alt="sondage"></span>
+        <strong>Une expertise pointue des<br>enjeux RH des TPE et PME</strong>
+      </a>
+      <a href="#" class="cta-block vert">
+        <span><img src="img/dollar-ampoule.png" alt="newsletter"></span>
+        <strong>Des solutions concrètes,<br>applicables et évolutives</strong>
+      </a>
+      <a href="#" class="cta-block rouge">
+        <span><img src="img/appel-telephonique.png" alt="aide"></span>
+        <strong>Contactez-nous et construisons ensemble<br>des solutions qui vous ressemblent</strong>
+      </a>
     </div>
-  </div>
+  </section>
+</main>
 
-  <!-- Bloc 3 : image à droite -->
-  <div class="service-item">
-    <div class="service-text">
-      <h3>Externalisation RH</h3>
-      <p>
-        Nous gérons tout ou partie de votre fonction RH pour vous faire gagner du temps, structurer vos processus et sécuriser votre gestion du personnel.<br>
-        Gestion administrative, juridique et opérationnelle<br>
-         Accompagnement ponctuel ou récurrent<br>
-         Expertise dédiée à votre structure
-      </p>
-    </div>
-    <div class="service-img">
-      <img src="img/externalisation_rh.jpeg" alt="Service Externalisation RH">
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <h2 class="section-title">Pourquoi choisir Qolibri & Cie ?</h2>
-  <p>Une approche humaine et personnalisée, une expertise pointue, et des solutions concrètes, applicables et évolutives.</p>
-</section>
-
-<section class="section bloc-liens">
-  <div class="cta-container">
-    <a href="#" class="cta-block bleu">
-      <span><img src="img/appel-telephonique.png" alt="appel"></span>
-      <strong>Prévoir<br>un appel</strong>
-    </a>
-    <a href="#" class="cta-block jaune">
-      <span><img src="img/editer.png" alt="sondage"></span>
-      <strong>Sondage sur<br>les conditions</strong>
-    </a>
-    <a href="#" class="cta-block vert">
-      <span><img src="img/abonnez-vous-a-la-newsletter.png" alt="newsletter"></span>
-      <strong>Abonnez-vous à<br>notre newsletter</strong>
-    </a>
-    <a href="#" class="cta-block rouge">
-      <span><img src="img/interrogatoire.png" alt="aide"></span>
-      <strong>Aide</strong>
-    </a>
-  </div>
-</section>
-
-<script src="js/app.js"></script>
+<!-- FOOTER -->
 <footer class="footer">
   <p>Qolibri & Cie - Bordeaux, France</p>
   <p>Email : contact@qolibri-cie.com | Téléphone : 09.81.81.18.76</p>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/qolibri.cie.rh?igsh=cGNoNTBxNTZkanVr" target="_blank">
+      <img src="img/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/86461931/admin/dashboard/" target="_blank">
+      <img src="img/linkedin.png" alt="LinkedIn">
+    </a>
+  </div>
+
 </footer>
+
+<script src="js/app.js"></script>
+<button id="scrollTopBtn" title="Remonter en haut">&#8679;</button>
 </body>
 </html>
