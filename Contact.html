@@ -58,64 +58,80 @@
 
 <!-- === CONTENU PRINCIPAL === -->
 <main>
-  <section class="hero">
-    <img src="img/logo_image.jpg" alt="Logo">
-    <h1>RECRUTEMENT ET ACCOMPAGNEMENT EN RESSOURCES HUMAINES</h1>
-    <p>Nous savons que les entreprises et les candidats ont des besoins différents<br>en matière de Ressources Humaines et que les recettes toutes faites c’est juste bon pour la cuisine.</p>
+
+  <section class="contact-section">
+    <div class="contact-intro">
+      <p> <strong>Travaillons ensemble, simplement.</strong></p>
+      <p>
+        Chez Qolibri & Cie, on ne prétend pas être meilleurs que les autres.
+        On fait simplement les choses avec sincérité, expertise et passion.<br>
+        Recruter, accompagner, fidéliser : on crée du lien, pas juste des contrats.
+        Nous construisons des ponts entre les entreprises et les talents,
+        avec une vision sur-mesure, humaine et engagée.
+      </p>
+      <p> Vous cherchez des solutions RH sur-mesure, concrètes et efficaces ?</p>
+      <p> Vous croyez aux valeurs, pas aux recettes toutes faites ? Alors on est faits pour s’entendre.</p>
+      <p> Si notre vision résonne avec la vôtre, discutons-en. Notre équipe vous répond avec plaisir.</p>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <h2>Discutons ensemble de vos projets</h2>
+
+      <label>Nom et prénom * :
+        <input type="text" name="nom" required>
+      </label>
+
+      <label>Nom de votre entreprise :
+        <input type="text" name="entreprise">
+      </label>
+
+      <label>Adresse e-mail * :
+        <input type="email" name="email" required>
+      </label>
+
+      <label>Téléphone :
+        <input type="tel" name="telephone">
+      </label>
+
+      <label>Sujet de votre demande * :</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="sujet" value="Recrutement"> Recrutement</label>
+        <label><input type="checkbox" name="sujet" value="Audit RH"> Audit RH</label>
+        <label><input type="checkbox" name="sujet" value="Externalisation RH"> Externalisation RH</label>
+        <label><input type="checkbox" name="sujet" value="Coaching"> Coaching / Accompagnement</label>
+        <label><input type="checkbox" name="sujet" value="Partenariat"> Partenariat</label>
+        <label><input type="checkbox" name="sujet" value="Autre" id="autre-checkbox"> Autre</label>
+        <div id="autre-detail" class="" style="margin-top: 10px;">
+          <label>Merci de préciser :
+            <input type="text" name="autre_detail" placeholder="Votre demande spécifique">
+          </label>
+        </div>
+      </div>
+
+
+        <label>Décrivez votre besoin ou projet * :
+        <textarea name="message" required></textarea>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" name="consentement" required>
+        J'accepte que mes données soient utilisées par Qolibri & Cie pour être recontacté(e).
+      </label>
+
+      <button type="submit" class="btn-services">Envoyer</button>
+      <p class="confidentialite">Vos données restent confidentielles et ne seront jamais partagées avec des tiers.</p>
+    </form>
+  </section>
+  <section class="contact-section">
+    <div class="contact-intro">
+      <p><h2>Contactez-Nous</h2></p>
+      <p>Qolibri & Cie – Bordeaux, France (intervention nationale)</p>
+      <p>Email : contact@qolibri-cie.com</p>
+      <p>Téléphone : 09.81.81.18.76</p>
+      <p>Disponibilité : Lundi – Vendredi | 9h – 18h</p>
+    </div>
   </section>
 
-  <section class="services-list">
-    <!-- Bloc 1 -->
-    <div class="service-item">
-      <div class="service-text">
-        <h3>Recrutement sur-mesure</h3>
-        <p>
-          Nous identifions, sélectionnons et intégrons les talents les plus pertinents pour votre organisation, avec une approche qualitative et ciblée.<br>
-          Recrutement CDI, CDD (intérim via notre partenaire)<br>
-          Consultant dédié & expertise sectorielle<br>
-          Suivi global, de la définition du besoin à l’intégration
-        </p>
-        <a href="#" class="btn-services">Afficher les services</a>
-      </div>
-      <div class="service-img">
-        <img src="img/entretien.avif" alt="Service Recrutement">
-      </div>
-    </div>
-
-    <!-- Bloc 2 -->
-    <div class="service-item reverse">
-      <div class="service-img">
-        <img src="img/audit_rh2.jpeg" alt="Service Audit RH">
-      </div>
-      <div class="service-text">
-        <h3>Audit RH</h3>
-        <p>
-          Nous réalisons un état des lieux complet de vos pratiques RH pour les optimiser, vous conformer aux obligations légales et soutenir votre développement.<br>
-          Dispositif PCRH<br>
-          Diagnostic opérationnel & recommandations concrètes<br>
-          Alignement stratégique & conformité réglementaire
-        </p>
-        <a href="#" class="btn-services">Afficher les services</a>
-      </div>
-    </div>
-
-    <!-- Bloc 3 -->
-    <div class="service-item">
-      <div class="service-text">
-        <h3>Externalisation RH</h3>
-        <p>
-          Nous gérons tout ou partie de votre fonction RH pour vous faire gagner du temps, structurer vos processus et sécuriser votre gestion du personnel.<br>
-          Gestion administrative, juridique et opérationnelle<br>
-          Accompagnement ponctuel ou récurrent<br>
-          Expertise dédiée à votre structure
-        </p>
-        <a href="#" class="btn-services">Afficher les services</a>
-      </div>
-      <div class="service-img">
-        <img src="img/externalisation_rh.jpeg" alt="Service Externalisation RH">
-      </div>
-    </div>
-  </section>
 
   <section class="section">
 

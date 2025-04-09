@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Qolibri & Cie - Recrutement sur mesure et conseil RH" />
+  <title>Qolibri & Cie - Informations RH</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header-qolibri">
+  <a href="Accueil.html" class="logo">
+    <img src="img/logo-Transparent.png" alt="Logo Qolibri & Cie">
+  </a>
+  <button class="menu-toggle" id="openMenu">&#9776;</button>
+</header>
+
+<!-- Overlay Menu -->
+<div class="overlay-menu" id="overlayMenu">
+  <button class="close-btn" id="closeMenu">&times;</button>
+  <div class="overlay-content">
+    <div class="overlay-col">
+      <h3>Général</h3>
+      <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="Informations.html">Informations</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="overlay-col">
+      <h3>Entreprise</h3>
+      <ul>
+        <li><a href="Entreprise.html?tab=recrutement">Recrutement</a></li>
+        <li><a href="Entreprise.html?tab=audit">Audit RH</a></li>
+        <li><a href="Entreprise.html?tab=externalisation">Externalisation RH</a></li>
+      </ul>
+    </div>
+    <div class="overlay-col">
+      <h3>Candidats</h3>
+      <ul>
+        <li><a href="Candidats.html?tab=coaching">Coaching</a></li>
+        <li><a href="Candidats.html?tab=entretiens">Préparation aux entretiens</a></li>
+        <li><a href="Candidats.html?tab=confiezvous">Confiez-vous à nous</a></li>
+      </ul>
+    </div>
+    <div class="overlay-col">
+      <h3>À propos de nous</h3>
+      <ul>
+        <li><a href="Apropos.html?tab=qolibri">Qolibri&Cie</a></li>
+        <li><a href="Apropos.html?tab=missions">Nos Missions</a></li>
+        <li><a href="Apropos.html?tab=valeurs">Nos Valeurs</a></li>
+        <li><a href="Apropos.html?tab=fondatrice">La Fondatrice</a></li>
+        <li><a href="mention-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="tabs-section">
+    <div class="tabs-header">
+      <button class="tab-button active" data-tab="recrutement">Recrutement</button>
+      <button class="tab-button" data-tab="audit">Audit RH</button>
+      <button class="tab-button" data-tab="externalisation">Externalisation RH</button>
+    </div>
+
+    <div class="tabs-content">
+      <!-- Onglet Recrutement -->
+      <div class="tab-pane active" id="recrutement">
+        <div class="service-container">
+          <div class="service-text">
+            <h2>Recrutement</h2>
+            <p><strong>Notre ambition : Apporter une autre expérience du recrutement</strong></p>
+            <p>Le marché de l’emploi évolue, les technologies progressent, les mentalités changent… et le recrutement doit lui aussi évoluer.</p>
+            <p>En tant qu’employeurs, vous êtes fatigués de recevoir des piles de CV sélectionnés à la hâte via quelques mots-clés, sans réelle adéquation avec vos besoins.</p>
+            <p>Chez Qolibri & Cie, nous faisons les choses autrement, chaque mission est 100% personnalisée : un consultant dédié, une approche ciblée, et une compréhension approfondie de votre culture d’entreprise.</p>
+            <ul>
+              <li> Recrutement sur-mesure (CDI, CDD, Intérim via notre partenariat avec Trimaicia)</li>
+              <li> Expertise sectorielle : nous recrutons uniquement dans les domaines que nous maîtrisons</li>
+              <li> Accompagnement global : sourcing, sélection, entretiens et suivi post-intégration.</li>
+            </ul>
+            <p><strong>Notre mission :</strong> un recrutement intelligent, humain et sur-mesure.</p>
+            <p><strong>Nos résultats :</strong></p>
+            <ul>
+              <li> 100% de réussite sur les missions confiées</li>
+              <li> 95% de satisfaction client</li>
+              <li> 98% de satisfaction candidat</li>
+            </ul>
+          </div>
+          <div class="service-image">
+            <img src="img/téléchargement.jpeg" alt="Recrutement Qolibri">
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglet Audit RH -->
+      <div class="tab-pane" id="audit">
+        <div class="service-container">
+          <div class="service-text">
+            <h2>Audit RH</h2>
+            <p><strong>Notre objectif : faire de vos Ressources Humaines un levier stratégique de performance</strong></p>
+            <p>Les ressources humaines ne doivent pas être une simple fonction support : elles sont un moteur clé du développement et de la croissance de votre entreprise. Vos pratiques RH sont-elles vraiment à la hauteur de vos ambitions… et en conformité avec la législation ? Car au-delà de la performance, une mauvaise gestion RH peut coûter cher.</p>
+            <p>Chez Qolibri & Cie, l’audit RH est un outil de pilotage stratégique. Nous analysons vos pratiques en profondeur, identifions vos leviers d’optimisation et vous proposons un plan d’action clair, priorisé et adapté à votre réalité terrain.</p>
+            <ul>
+              <li> Dispositif PCRH (Plan Conseil RH) : financement possible pour les PME</li>
+              <li> Analyse des pratiques RH actuelles : recrutement, intégration, gestion de carrière, QVCT, climat social</li>
+              <li> Recommandations opérationnelles : outils, méthodes, processus à améliorer ou structurer</li>
+              <li> Restitution claire et actionnable pour passer à l’action rapidement</li>
+            </ul>
+            <p><strong>Notre promesse :</strong> vous permettre d’aligner vos pratiques RH avec vos enjeux business, tout en prenant soin de votre capital humain.</p>
+          </div>
+          <div class="service-image">
+            <img src="img/audit_rh.jpeg" alt="Audit RH">
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglet Externalisation RH -->
+      <div class="tab-pane" id="externalisation">
+        <div class="service-container">
+          <div class="service-text">
+            <h2>Externalisation RH</h2>
+            <p><strong>Libérez du temps, gagnez en efficacité, sans renoncer à la qualité RH</strong></p>
+            <p>Quand on est dirigeant de TPE ou PME, le temps est précieux et les sujets RH peuvent vite devenir complexes, chronophages… et sous-estimés. Pourtant, une gestion RH solide est indispensable pour faire grandir votre entreprise en toute sérénité.</p>
+            <p>Chez Qolibri & Cie, nous vous proposons un service d’externalisation RH agile et sur-mesure, pour vous permettre de rester concentré sur votre cœur de métier, tout en assurant un cadre RH clair, structuré et conforme à vos obligations.</p>
+            <ul>
+              <li> Gestion RH à la carte : contrats, dossiers salariés, onboarding, offboarding</li>
+              <li> Pilotage des obligations légales : entretiens, DUERP, affichages, etc.</li>
+              <li> Intervention ponctuelle ou récurrente selon vos besoins</li>
+            </ul>
+            <p><strong>Notre mission :</strong> structurer votre gestion RH avec flexibilité, pragmatisme et expertise.</p>
+          </div>
+          <div class="service-image">
+            <img src="img/externalisation_rh.jpeg" alt="Externalisation RH">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section">
+
+  </section>
+
+  <section class="section bloc-liens">
+    <h2 class="section-title">Pourquoi choisir Qolibri & Cie ?</h2>
+    <div class="cta-container">
+      <a href="Candidats.html" class="cta-block bleu">
+        <span><img src="img/integration%20(1).png" alt="appel"></span>
+        <strong>Une approche humaine<br>et personnalisée</strong>
+      </a>
+      <a href="Entreprise.html" class="cta-block jaune">
+        <span><img src="img/rectangle-professionnel%20(1).png" alt="sondage"></span>
+        <strong>Une expertise pointue des<br>enjeux RH des TPE et PME</strong>
+      </a>
+      <a href="Entreprise.html" class="cta-block vert">
+        <span><img src="img/dollar-ampoule.png" alt="newsletter"></span>
+        <strong>Des solutions concrètes,<br>applicables et évolutives</strong>
+      </a>
+      <a href="Contact.html" class="cta-block rouge">
+        <span><img src="img/appel-telephonique.png" alt="aide"></span>
+        <strong>Contactez-nous et construisons ensemble<br>des solutions qui vous ressemblent</strong>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Qolibri & Cie - Bordeaux, France</p>
+  <p>Email : contact@qolibri-cie.com | Téléphone : 09.81.81.18.76</p>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/qolibri.cie.rh" target="_blank">
+      <img src="img/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/86461931/admin/dashboard/" target="_blank">
+      <img src="img/linkedin.png" alt="LinkedIn">
+    </a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<button id="scrollTopBtn" title="Remonter en haut">&#8679;</button>
+</body>
+</html>
