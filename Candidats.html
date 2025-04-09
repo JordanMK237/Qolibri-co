@@ -1,177 +1,258 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-js">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Qolibri & Cie - Recrutement sur mesure et conseil RH" />
-  <title>Qolibri & Cie - Informations RH</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Qolibri & Cie - Recrutement sur mesure et conseil RH">
+  <title>Qolibri & Cie</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="img/favicon_v2.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon_v2.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<header class="header transparent" id="mainHeader">
+  <!-- Logo -->
+  <div class="header-left">
+    <a href="index.html" class="logo">
+      <img src="img/logo-Transparent.png" alt="Logo Qolibri & Cie" style="height: 70px;">
+    </a>
+  </div>
 
-<header class="header-qolibri">
-  <a href="Accueil.html" class="logo">
-    <img src="img/logo-Transparent.png" alt="Logo Qolibri & Cie">
-  </a>
-  <button class="menu-toggle" id="openMenu">&#9776;</button>
+  <!-- Navigation desktop -->
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li class="has-dropdown">
+        <a href="Entreprise.html">Entreprises</a>
+        <ul class="dropdown">
+          <li><a href="Entreprise.html">Nos services</a></li>
+          <li><a href="Recrutement.html">Recrutement</a></li>
+          <li><a href="AuditRH.html">Audit Rh</a></li>
+          <li><a href="Externalisation.html">Externalisation</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="Candidats.html">Candidats</a>
+        <ul class="dropdown">
+          <li><a href="Candidats.html">Nos services</a></li>
+          <li><a href="Guider.html">Vous guider</a></li>
+          <li><a href="Preparer.html">Vous préparer</a></li>
+          <li><a href="https://app.wink-lab.com/recruteur/qolibri--cie">Nos offres d'emploi</a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="Apropos.html">À propos</a>
+        <ul class="dropdown">
+          <li><a href="Histoire.html">Notre histoire</a></li>
+          <li><a href="Fondatrice.html">Notre fondatrice</a></li>
+          <li><a href="Mission.html">Notre mission</a></li>
+        </ul>
+      </li>
+      <li><a href="Informations.html">Ressources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bouton contact (desktop) -->
+  <div class="nav-right desktop-nav">
+    <a href="Contact.html" class="btn-pdf">Nous contacter</a>
+  </div>
+
+  <!-- Bouton burger (mobile only) -->
+  <button id="burgerMenu" class="burger-menu" aria-label="Ouvrir le menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </header>
 
-<!-- Overlay Menu -->
-<div class="overlay-menu" id="overlayMenu">
-  <button class="close-btn" id="closeMenu">&times;</button>
-  <div class="overlay-content">
-    <div class="overlay-col">
-      <h3>Général</h3>
-      <ul>
-        <li><a href="Accueil.html">Accueil</a></li>
-        <li><a href="Informations.html">Informations</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
+<!-- Overlay et menu mobile à l'extérieur du header -->
+<div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
+
+<nav id="mobileNav" class="mobile-nav">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="Entreprise.html">Entreprises</a></li>
+    <li><a href="Candidats.html">Candidats</a></li>
+    <li><a href="Apropos.html">À propos</a></li>
+    <li><a href="Informations.html">Informations</a></li>
+    <li><a href="Contact.html" class="mobile-btn">Nous contacter</a></li>
+  </ul>
+</nav>
+
+
+<section class="hero-candidats">
+  <div class="hero-overlay"></div>
+  <div class="hero-candidats-content">
+    <h1>CANDIDATS</h1>
+    <p><strong>Votre parcours est unique. Notre accompagnement aussi.</strong></p>
+    <p>Vous révéler, c’est notre métier. Votre avenir, notre priorité.</p>
+  </div>
+</section>
+
+<section class="services-entreprises ">
+  <div class="services-header">
+    <h2>Nos services</h2>
+    <p>
+      Chez Qolibri & Cie, nous vous accompagnons bien au-delà de la
+      recherche d’emploi — nous construisons avec vous un parcours qui a du sens.
+      Grâce à notre réseau de partenaires innovants, nous vous connectons à des
+      opportunités inspirantes, quel que soit votre profil. Plus qu’un accompagnement, un
+      partenariat durable pour une carrière à votre image.
+    </p>
+  </div>
+  <div class="services-cards">
+    <div class="service-card scroll-fade">
+      <img src="img/wmremove-transformed%20(1).jpeg" alt="Vous guider">
+      <h3>VOUS GUIDER</h3>
+      <p>
+        Un accompagnement personnalisé pour faire le point, explorer vos envies
+        et définir un projet professionnel qui vous ressemble.
+      </p>
+      <a href="Guider.html" class="btn-service1">EN SAVOIR<br><strong>PLUS</strong></a>
     </div>
-    <div class="overlay-col">
-      <h3>Entreprise</h3>
-      <ul>
-        <li><a href="Entreprise.html?tab=recrutement">Recrutement</a></li>
-        <li><a href="Entreprise.html?tab=audit">Audit RH</a></li>
-        <li><a href="Entreprise.html?tab=externalisation">Externalisation RH</a></li>
-      </ul>
+
+    <div class="service-card scroll-fade">
+      <img src="img/DeWatermark.ai_1745442864855.png" alt="Vous préparer">
+      <h3>VOUS PRÉPARER</h3>
+      <p>
+        Des outils et des conseils concrets pour valoriser vos atouts, structurer
+        votre discours et aborder vos entretiens avec assurance.
+      </p>
+      <a href="Preparer.html" class="btn-service1">EN SAVOIR<br><strong>PLUS</strong></a>
     </div>
-    <div class="overlay-col">
-      <h3>Candidats</h3>
-      <ul>
-        <li><a href="#" class="menu-tab-link" data-tab="coaching">Coaching</a></li>
-        <li><a href="#" class="menu-tab-link" data-tab="entretiens">Préparation aux entretiens</a></li>
-        <li><a href="#" class="menu-tab-link" data-tab="confiezvous">Confiez-vous à nous</a></li>
-      </ul>
-    </div>
-    <div class="overlay-col">
-      <h3>À propos de nous</h3>
-      <ul>
-        <li><a href="Apropos.html?tab=qolibri">Qolibri&Cie</a></li>
-        <li><a href="Apropos.html?tab=missions">Nos Missions</a></li>
-        <li><a href="Apropos.html?tab=valeurs">Nos Valeurs</a></li>
-        <li><a href="Apropos.html?tab=fondatrice">La Fondatrice</a></li>
-        <li><a href="mention-legales.html">Mentions légales</a></li>
-      </ul>
+
+    <div class="service-card scroll-fade">
+      <img src="img/Réorientation.png" alt="Vous reconvertir">
+      <h3>VOUS RECONVERTIR</h3>
+      <p>
+        Un soutien sur-mesure pour repenser votre trajectoire, identifier de
+        nouvelles pistes et réussir votre transition professionnelle.
+      </p>
+      <a href="Preparer.html" class="btn-service1">EN SAVOIR<br><strong>PLUS</strong></a>
     </div>
   </div>
-</div>
+</section>
 
-<main>
-  <section class="tabs-section">
-    <div class="tabs-header">
-      <button class="tab-button active" data-tab="coaching">Coaching</button>
-      <button class="tab-button" data-tab="entretiens">Préparation aux entretiens</button>
-      <button class="tab-button" data-tab="confiezvous">Confiez-vous à nous</button>
+
+<section class="why-qolibri-section">
+  <div class="why-qolibri-container">
+    <div class="services-header">
+      <h2>Nos avantages</h2>
+      <p>
+        Bien plus qu’une simple recherche d’emploi : un véritable accompagnement chez Qolibri & Cie, nous croyons que chaque personne mérite un parcours professionnel à la hauteur de son potentiel. Notre mission : vous aider à le révéler.
+      </p>
     </div>
 
-    <div class="tabs-content">
-      <!-- Onglet Coaching -->
-      <div class="tab-pane active" id="coaching">
-        <div class="service-container">
-          <div class="service-text">
-            <h2>Coaching</h2>
-            <p><strong>Notre objectif : vous aider à décrocher le job qui vous correspond vraiment.</strong></p>
-            <p>Vous êtes dans une phase de réflexion sur votre avenir professionnel ou tout simplement à l’écoute du marché ? Chez Qolibri & Cie, nous savons qu’une candidature réussie commence bien avant l’entretien.</p>
-            <p> Nous vous accompagnons à chaque étape de votre parcours, avec un coaching personnalisé, concret et adapté à vos besoins.</p>
+    <div class="why-qolibri-content scroll-fade">
+      <div class="why-qolibri-image">
+        <img src="img/Prenez%20votre%20élan.png" alt="Candidat satisfait" />
+      </div>
+
+      <div class="why-qolibri-text">
+        <h2>Pourquoi faire appel à Qolibri & Cie</h2>
+        <p>
+          Parce que vous méritez bien plus qu’un simple accompagnement. Chez Qolibri & Cie, nous vous aidons à avancer avec confiance, méthode et clarté dans chaque étape de votre parcours professionnel.
+        </p>
+        <p>
+          Un accompagnement sur-mesure : que vous souhaitiez évoluer, vous reconvertir ou tout simplement mieux vous positionner, nous adaptons notre approche à vos besoins réels.
+        </p>
+        <p>
+          Des outils concrets et actuels : optimisation de votre CV, de votre profil LinkedIn, préparation aux entretiens, tests de personnalité et d’orientation… chaque levier est activé pour maximiser vos chances.
+        </p>
+        <p>
+          Une écoute active et bienveillante : vous n’êtes pas un dossier. Vous êtes un projet, une ambition, une histoire à faire grandir.
+        </p>
+        <p>
+          <strong>Notre mission</strong> : vous aider à révéler votre potentiel et à construire une carrière qui vous ressemble.
+        </p>
+        <p>
+          Prêt(e) à donner un nouvel élan à votre parcours ? Parlons de vos objectifs, et construisons ensemble la suite de votre histoire professionnelle.
+        </p>
+
+        <a href="Contact.html" class="btn-why-contact">Contactez-nous</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <span class="hero-big-text"> Vos enjeux sont spécifiques, Nos solutions aussi &nbsp;•&nbsp; Vos enjeux sont spécifiques, Nos solutions aussi &nbsp;•&nbsp; Vos enjeux sont spécifiques, Nos solutions aussi</span>
+    </div>
+  </div>
+  <div class="footer-main">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo">Qolibri & Cie</div>
+          <p class="tagline">Recrutement & Conseil RH sur mesure</p>
+        </div>
+
+
+        <div class="footer-links-container">
+          <div class="footer-links-column">
+            <h3>Accès rapide</h3>
             <ul>
-              <li> Optimisation de votre candidature : CV percutant, lettre de motivation sur-mesure, profil LinkedIn optimisé pour les recruteurs.</li>
-              <li> Développement de la confiance en soi : Apprenez à parler de vous avec clarté, assurance et authenticité.</li>
-              <li> Conseils stratégiques et formations adaptées : Identifiez vos forces, vos axes de progression, et les opportunités du marché qui vous conviennent.</li>
-              <li> Notre mission : révéler votre potentiel, structurer votre message et vous rendre visible pour les bonnes opportunités.</li>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="Apropos.html">À propos</a></li>
+              <li><a href="Entreprise.html">Entreprises</a></li>
+              <li><a href="Candidats.html">Candidats</a></li>
             </ul>
           </div>
-          <div class="service-image">
-            <img src="img/coaching1.jpeg" alt="Coaching carrière Qolibri" />
+
+          <div class="footer-links-column">
+            <h3>Pour les Entreprises</h3>
+            <ul>
+              <li><a href="Recrutement.html">Recrutement</a></li>
+              <li><a href="Entreprise.html?tab=audit">Audit RH</a></li>
+              <li><a href="Externalisation.html">Externalisation RH</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-column">
+            <h3>Pour les candidats</h3>
+            <ul>
+              <li><a href="Guider.html">Vous guider</a></li>
+              <li><a href="Preparer.html">Vous Préparer</a></li>
+              <li><a href="https://app.wink-lab.com/recruteur/qolibri--cie">Nos offres d'emplois</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-column">
+            <h3>Informations</h3>
+            <ul>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="mention-legales.html">Mentions légales</a></li>
+              <li><a href="Informations.html">Ressources</a></li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Onglet Préparation aux entretiens -->
-      <div class="tab-pane" id="entretiens">
-        <div class="service-container">
-          <div class="service-text">
-            <h2>Préparation aux entretiens</h2>
-            <p><strong>L’entretien : un moment clé pour que vous fassiez la différence</strong></p>
-            <p>Chez Qolibri & Cie, nous savons que passer un entretien peut être intimidant. Beaucoup de candidats peinent à mettre en avant leurs qualités, à structurer leur discours ou à parler d’eux avec fluidité.</p>
-            <p> Notre rôle ? Vous accompagner pour que vos entretiens reflètent votre personnalité, vos compétences et vos aspirations réelles.</p>
-            <ul>
-              <li> Préparation sur-mesure en fonction du poste visé et du type d’entretien.</li>
-              <li> Méthodologie d’expression efficace (structure du discours, storytelling, mise en valeur des réussites).</li>
-              <li> Mises en situation, questions types & débriefing.</li>
-              <li> Nous ne cherchons pas à vous faire réciter un script, mais à faire émerger la meilleure version de vous-même.</li>
-            </ul>
-          </div>
-          <div class="service-image">
-            <img src="img/coaching2.jpeg" alt="Préparation aux entretiens Qolibri" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Onglet Confiez-vous à nous -->
-      <div class="tab-pane" id="confiezvous">
-        <div class="service-container">
-          <div class="service-text">
-            <h2>Confiez-vous à nous</h2>
-            <p><strong>Parce que vous n’êtes pas un mouton à 5 pattes (et on le sait).</strong></p>
-            <p>On le sait. Le marché est saturé d’approches automatisées, où les profils sont filtrés à la hâte, et où l’on cherche parfois le candidat idéal qui coche toutes les cases, même celles qui n’existent pas encore.</p>
-            <p>Chez Qolibri & Cie, on fait les choses autrement. On prend le temps de vous connaître, comprendre votre parcours, vos envies, ce que vous motivez et ce que vous ne voulez plus.</p>
-            <ul>
-              <li> Notre rôle ? Vous écouter. Vous conseiller. Vous accompagner. Et surtout, vous faire gagner en clarté et en confiance pour postuler là où vous pourrez vraiment vous épanouir.</li>
-              <li> Nous ne promettons pas des miracles, mais nous nous engageons à faire les choses sérieusement, humainement, en respectant votre réalité.</li>
-              <li> Et quand c’est nécessaire, nous savons aussi conseiller nos clients pour qu’ils voient au-delà des cases à cocher.</li>
-              <li> Un bon match, ce n’est pas qu’une question de CV. C’est une rencontre entre des valeurs, des compétences… et une vision commune.</li>
-            </ul>
-          </div>
-          <div class="service-image">
-            <img src="img/coaching3.jpeg" alt="Confiez-vous à nous Qolibri" />
-          </div>
-        </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/86461931/" class="social-icon linkedin" aria-label="LinkedIn"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/qolibri.cie.rh" class="social-icon instagram" aria-label="Instagram"><img src="img/instagram.png" alt="Instagram"></a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section">
-
-  </section>
-
-  <section class="section bloc-liens">
-    <h2 class="section-title">Pourquoi choisir Qolibri & Cie ?</h2>
-    <div class="cta-container">
-      <a href="Candidats.html" class="cta-block bleu">
-        <span><img src="img/integration%20(1).png" alt="appel"></span>
-        <strong>Une approche humaine<br>et personnalisée</strong>
-      </a>
-      <a href="Entreprise.html" class="cta-block jaune">
-        <span><img src="img/rectangle-professionnel%20(1).png" alt="sondage"></span>
-        <strong>Une expertise pointue des<br>enjeux RH des TPE et PME</strong>
-      </a>
-      <a href="Entreprise.html" class="cta-block vert">
-        <span><img src="img/dollar-ampoule.png" alt="newsletter"></span>
-        <strong>Des solutions concrètes,<br>applicables et évolutives</strong>
-      </a>
-      <a href="Contact.html" class="cta-block rouge">
-        <span><img src="img/appel-telephonique.png" alt="aide"></span>
-        <strong>Contactez-nous et construisons ensemble<br>des solutions qui vous ressemblent</strong>
-      </a>
+  <div class="footer-bottom">
+    <div class="footer-container">
+      <div class="copyright">
+        <p>© <span id="currentYear"></span> — Qolibri & Cie</p>
+      </div>
+      <div class="back-to-top">
+        <button id="backToTopBtn" aria-label="Retour en haut">↑</button>
+      </div>
     </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <p>Qolibri & Cie - Bordeaux, France</p>
-  <p>Email : contact@qolibri-cie.com | Téléphone : 09.81.81.18.76</p>
-  <div class="footer-socials">
-    <a href="https://www.instagram.com/qolibri.cie.rh" target="_blank">
-      <img src="img/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://www.linkedin.com/company/86461931/admin/dashboard/" target="_blank">
-      <img src="img/linkedin.png" alt="LinkedIn">
-    </a>
   </div>
 </footer>
 
 <script src="js/app.js"></script>
-<button id="scrollTopBtn" title="Remonter en haut">&#8679;</button>
 </body>
 </html>
